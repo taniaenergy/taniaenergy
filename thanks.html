@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Дякую за оплату</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<style>
+    body {
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        min-height: 100vh;
+    }
+
+    section {
+        padding: 15px;
+    }
+
+    .logo {
+        position: relative;
+        left: 0;
+        top: 0;
+    }
+
+    .back-image {
+        position: absolute;
+        bottom: 10vh;
+        left: -283px;
+        z-index: 1;
+        opacity: 0.5;
+        max-width: 60%;
+    }
+
+    h2 {
+        font-size: 26px;
+        margin: 20px 0;
+    }
+
+    .thanks-container {
+        padding: 15px;
+        max-width: 700px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-self: center;
+        font-size: 25px;
+        position: relative;
+        z-index: 10;
+    }
+
+    p {
+        margin: 30px 0;
+        text-align: center;
+    }
+
+    .main-button {
+        margin-top: 40px;
+    }
+
+    @media (max-width: 1024px) {
+        .thanks-container {
+            font-size: 21px;
+            margin-top: -100px;
+            max-width: 100vw;
+        }
+
+        .logo img {
+            max-width: 300px;
+        }
+
+        .main-button {
+            width: 90vw;
+            font-size: 20px;
+        }
+
+        .back-image {
+            bottom: -42vh;
+            left: 0;
+            opacity: 0.3;
+            max-width: 164%;
+        }
+
+
+    }
+</style>
+
+<body>
+
+    <section>
+        <img src="images/header.png" alt="TANIA | Energy" class="back-image">
+        <div class="thanks-container">
+            <a class="logo" href="index.html">
+                <img src="images/logo.png" alt="TANIA | Energy">
+            </a>
+            <h1>Дякую за оплату!</h1>
+            <h2>Ваш платіж успішно пройшов 💌</h2>
+            <h4>Допоможу відновити баланс, знайти відповіді всередині себе та покращити
+                якість життя.</h4>
+            <a href="https://www.instagram.com/tania.energy" class="main-button" target="_blank">
+                Перейти в телеграм
+            </a>
+        </div>
+    </section>
+</body>
+
+</html>
